@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Quản lý sinh vien</h2>
+
+<table border="1">
+    <tr>
+        <th>
+            ID:
+        </th>
+        <th>
+            Họ:
+        </th>
+        <th>
+            Tên:
+        </th>
+        <th>
+            Email:
+        </th>
+        <th>
+            Giới tính:
+        </th>
+        <th>
+            Địa chỉ:
+        </th>
+    </tr>
+
+    @foreach (var Dulieu in Model)
+    {
+        <tr>
+            <td>
+                @Dulieu.id
+            </td>
+            <td>
+                @Dulieu.first_name
+            </td>
+            <td>
+                @Dulieu.last_name
+            </td>
+            <td>
+                @Dulieu.email
+            </td>
+            <td>
+                @Dulieu.gender
+            </td>
+            <td>
+                @Dulieu.ip_address
+            </td>
+        </tr>
+    }
+</table>
+
