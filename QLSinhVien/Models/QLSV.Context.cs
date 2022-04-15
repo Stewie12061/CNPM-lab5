@@ -25,6 +25,6 @@ namespace QLSinhVien.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<QLSinhVien> QLSinhViens { get; set; }
+        public virtual DbSet<QLSinhVienn> QLSinhVienns { get; set; }
     }
 }

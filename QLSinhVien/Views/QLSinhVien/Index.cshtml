@@ -6,6 +6,10 @@
 
 <h2>Quản lý sinh vien</h2>
 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
 <table border="1">
     <tr>
         <th>
@@ -49,7 +53,15 @@
             <td>
                 @Dulieu.ip_address
             </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = @Dulieu.id }) |
+                @Html.ActionLink("Details", "Details", new { id = @Dulieu.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = @Dulieu.id })
+            </td>
         </tr>
     }
-</table>
+        }
+
+
+    </table>
 
